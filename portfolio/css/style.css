@@ -1,0 +1,1382 @@
+/*Подключение шрифтов*/
+@font-face {
+  font-family: Gotham Pro;
+  src: url("../fonts/Gotham_Pro.ttf");
+  src: url("../fonts/ofont_ru_Gotham_Pro_2.ttf"); 
+}
+/*Обнуление стилей*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Ссылки*/
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/*Ограничение контента*/
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/*1 экран: главная страница*/
+/*Хедер*/
+.header {
+	position: fixed;
+	width: 100%;
+    box-shadow: 0 5px 19px 2px rgba(0, 0, 0, 0.7); /*Тень*/
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    top: 0;
+	left: 0;
+	z-index: 50;
+}
+.header__burger {
+	display: none;
+	margin-left: 190px;
+}
+.header .nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px; /*Высота шапки*/
+    
+}
+.header .nav .nav__item {
+	display: flex;
+    align-items: center;
+}
+
+.header .nav .nav__item a {
+	font-family: "Gotham Pro Regular";
+	font-size: 14px;
+	line-height: 22px;
+    color: #000000; 
+    text-decoration: none;
+}
+.header .nav .nav__item li {
+	padding-left: 47px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;    
+}
+.header .nav .nav__item li:first-of-type {
+    padding-left: 0;
+    margin-left: 540px;
+}
+/*Блок с информацией*/
+/*Фоновая картинка*/
+.bg-site-name { 
+    width: 100%;
+    height: 696px;
+    background: url("../img/bg_page.png") center no-repeat;
+}
+/*Расположение элементов*/
+.bg-site-name .site-name {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Картинка*/
+.bg-site-name__image {
+	padding: 182px 0 0 0;
+	/*margin-left: 449px;*/
+}
+/*Текст*/
+.bg-site-name .title {
+	font-family: "Gotham Pro";
+	font-size: 25px;
+	color: #ffffff;
+	font-weight: bold;
+	line-height: 22px;
+	padding-top: 32px;
+	padding-bottom: 9px;
+}
+.bg-site-name .subtitle {
+	font-family: "Gotham Pro Regular";
+	font-size: 15px;
+	color: #ffffff;
+	line-height: 22px;
+}
+/*Иконки*/
+.site-name-icon {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+.site-name-icon .bg-site-name__image-icon {
+	padding: 15px 0 0 0;
+	cursor: pointer;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.site-name-icon .bg-site-name__image-icon2 {
+	padding: 18px 0 0 0;
+	margin-left: 47px;
+	cursor: pointer;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Заголовки для последующих разделов*/
+.head-title {
+	font-family: "Gotham Pro";
+	font-size: 41px;
+	font-weight: bold;
+	color: #000000;
+	line-height: 25.78px;
+	margin-top: 92px;
+	padding-bottom: 39px;
+	text-align: center;
+}
+
+/*2 экран: резюме*/
+/*Расположение контента*/
+.resume-columns__item {
+	display: flex;
+    justify-content: left;
+}
+.resume-info-title .resume-contacts-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+}
+.resume-info-title .resume-info-title .paragraph1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+}
+.resume-info-title .resume-info-title .paragraph2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+}
+.resume-info-title .resume-info-title .paragraph3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+}
+.resume-info-title .resume-info-title .paragraph4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+}
+/*Текст с контактной информацией*/
+.resume-columns__item .resume-contacts-title {
+	font-family: "Gotham Pro Regular";
+	font-size: 20px;
+	color: #000000;
+	line-height: 35px;
+	text-align: left;
+}
+.resume-columns__item .resume-contacts-title a {
+	font-family: "Gotham Pro";
+}
+/*Краткий текст резюме*/
+.resume-info-title .paragraph1 {
+	font-family: "Gotham Pro Regular";
+	font-size: 20px;
+	color: #000000;
+	line-height: 35px;
+	text-align: left;
+	padding: 0 0 36px 0;
+}
+.resume-info-title .paragraph2 {
+	font-family: "Gotham Pro Regular";
+	font-size: 20px;
+	color: #000000;
+	line-height: 35px;
+	text-align: left;
+	padding: 0 0 36px 0;
+}
+.resume-info-title .paragraph3 {
+	font-family: "Gotham Pro Regular";
+	font-size: 20px;
+	color: #000000;
+	line-height: 35px;
+	text-align: left;
+	padding: 0 0 36px 0;
+}
+.resume-info-title .paragraph4 {
+	font-family: "Gotham Pro Regular";
+	font-size: 20px;
+	color: #000000;
+	line-height: 35px;
+	text-align: left;
+	padding: 0 0 39px 0;
+}
+.resume-info-title .paragraph4 a {
+	color: #c81d31;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.resume-info-title .paragraph4 img {
+	width: 30px;
+	height: 30px;
+	margin-left: 14px;
+}
+/*Кнопка*/
+.contact-submit-contant {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding-bottom: 92px;*/
+}
+.contact-submit {
+	width: 221px;
+	height: 53px;
+	border-radius: 10px;
+	border: 5px solid #c81d31;
+	background-color: #c81d31;
+	cursor: pointer;
+}
+.contact-submit a {
+	font-family: "Gotham Pro";
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+
+/*3 экран: навыки*/
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 39px 0;
+}
+.row2 {
+	display: flex;
+    justify-content: space-around;
+}
+.grid-item{
+    background-color: rgba(0, 0, 0, 1);
+    width: 285px;
+    height: 285px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p.grid-title{
+    position: absolute;
+    font-family: "Gotham Pro Regular";
+    font-size: 18px;
+    color: #fefefe;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform .5s, opacity .3s;
+}
+.grid-item img{
+    opacity: .6;
+    transform: scale(1.1, 1.1);
+    transition: transform .5s, opacity .3s;
+
+}
+.grid-item:hover img{
+    opacity: 1;
+    transform: scale(1, 1);
+}
+.grid-item:hover p.grid-title{
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+}
+
+/*4 экран: образование*/
+table{
+	width: 100%;
+	border-collapse: collapse;
+    text-align: center;
+}
+td,th{
+    padding: 3px;
+    border: 1px solid black;
+}
+/*Профессиональные компетенции*/
+.tablePK1 {
+    width:483px;
+    display: block;
+    margin-left: 346px; 
+    font-family: "Gotham Pro Regular";
+    font-size: 14px;
+}
+.tablePK2 {
+    width:483px;
+    display: block;
+    padding-top: 28px;
+    margin-left: 346px; 
+    font-family: "Gotham Pro Regular";
+    font-size: 14px;
+}
+.tablePK3 {
+	width:483px;
+    display: block;
+    padding-top: 28px;
+    margin-left: 346px; 
+    font-family: "Gotham Pro Regular";
+    font-size: 14px;
+}
+.tablePK4 {
+	width:483px;
+    display: block;
+    padding-top: 28px;
+    margin-left: 346px; 
+    font-family: "Gotham Pro Regular";
+    font-size: 14px;
+}
+.tablePK5 {
+	width:483px;
+    display: block;
+    padding-top: 28px;
+    margin-left: 346px;
+    margin-bottom: 19px;
+    font-family: "Gotham Pro Regular";
+    font-size: 14px;
+}
+/*Общие компетенции*/
+.tableOK {
+	width: 100%;
+    max-width:1170px;
+    margin-bottom: 19px;
+    font-family: "Gotham Pro Regular";
+    font-size: 14px;
+}
+/*Учебный план*/
+.tableUP {
+    width: 100%;
+    max-width:1170px;
+    font-family: "Gotham Pro Regular";
+    font-size: 14px;
+}
+/*Спойлер*/
+details{
+  display:block;
+  background-color: #fff;
+  width:100%;
+  overflow:hidden;
+}
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;}
+/*Прямоугольник спойлера*/ 
+summary {
+   display:block;
+   padding: 18px 0 17px 0;
+   font-size: 30px;
+   font-family: "Gotham Pro Regular";
+   padding-left: 30px;
+   cursor: pointer;
+   position: relative;
+}
+/*Иконка стрелочка*/
+summary:before {  
+  top: 33px;
+  right: 30px;
+  color: transparent;
+  background: url("../img/icon/open.png") no-repeat;
+  width: 30px;
+  height: 16px;  
+  content: "";
+  position: absolute;
+  transition: transform .5s;
+}
+/*Анимация*/
+details[open] > summary:before {
+  transform: scale(1,-1);
+}
+details[open] summary ~ * { 
+  animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+summary:focus {
+  outline:0;
+}
+/*5 экран: проекты*/
+/*Заголовок*/
+.head-title-projects {
+	font-family: "Gotham Pro";
+	font-size: 41px;
+	font-weight: bold;
+	color: #000000;
+	line-height: 25.78px;
+	margin-top: 92px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+/*Подзаголовок*/
+.head-subtitle {
+	font-family: "Gotham Pro Regular";
+	font-size: 30px;
+	color: #000000;
+	line-height: 35px;
+	text-align: center;
+	padding-bottom: 39px;
+}
+/*Основной текст*/
+.paragraph-projects1 {
+	font-family: "Gotham Pro Regular";
+	font-size: 20px;
+	color: #000000;
+	line-height: 35px;
+	text-align: left;
+	padding-bottom: 40px;
+}
+.paragraph-projects2 {
+	font-family: "Gotham Pro Regular";
+	font-size: 20px;
+	color: #000000;
+	line-height: 35px;
+	text-align: left;
+	padding-bottom: 38px;
+}
+/*видео*/
+.video {
+	margin-left: 184px;
+}
+/*Текст под видео*/
+.paragraph-projects3 {
+	font-family: "Gotham Pro Regular";
+	font-size: 20px;
+	color: #000000;
+	line-height: 35px;
+	text-align: left;
+	padding: 37px 0 0 0;
+}
+.paragraph-projects3 a {
+	color: #c81d31;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.paragraph-projects3 img {
+	width: 30px;
+	height: 30px;
+	margin-left: 14px;
+}
+/*6 экран: форма обратной связи*/
+/*Фон*/
+.background {
+	width: 100%;
+	height: 790px;
+	border: 1px solid #fbfbfb;
+	background-color: #fbfbfb;
+	margin-top: 64px;
+}
+/*Заголовок*/
+.head-title-feedback {
+	font-family: "Gotham Pro";
+	font-size: 41px;
+	font-weight: bold;
+	color: #000000;
+	line-height: 25.78px;
+	padding: 29px 0 19px 0;
+	text-align: center;
+}
+/*Подзаголовок*/
+.head-subtitle-feedback {
+	font-family: "Gotham Pro Regular";
+	font-size: 30px;
+	color: #000000;
+	line-height: 35px;
+	text-align: center;
+	padding-bottom: 19px;
+}
+/*Текст над формами*/
+.text-FIO {
+	font-family: "Gotham Pro Regular";
+	font-size: 20px;
+	color: #000000;
+	line-height: 35px;
+	text-align: left;
+	padding-bottom: 21px;
+}
+.text-email {
+	font-family: "Gotham Pro Regular";
+	font-size: 20px;
+	color: #000000;
+	line-height: 35px;
+	text-align: left;
+	padding: 19px 0 19px 0;
+}
+.text-message {
+	font-family: "Gotham Pro Regular";
+	font-size: 20px;
+	color: #000000;
+	line-height: 35px;
+	text-align: left;
+	padding: 20px 0 17px 0;
+}
+/*Формы*/
+.feedback__form {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form__item_FIO {
+	width: 575px;
+	height: 41px;
+	box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.35);
+	border: 1px solid #efefef;
+	background-color: #efefef;
+}
+.form__item_email {
+	width: 575px;
+	height: 41px;
+	box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.35);
+	border: 1px solid #efefef;
+	background-color: #efefef;
+}
+.form__item_message {
+	width: 576px;
+	height: 96px;
+	box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.35);
+	border: 1px solid #efefef;
+	background-color: #efefef;
+	padding-bottom: 11px;
+}
+.form__item input {
+	padding-left: 25px;
+	font-family: "Gotham Pro Regular";
+	font-size: 14px;
+	color: #000000;
+}
+.form__item textarea {
+	padding-left: 25px;
+	padding-top: 25px;
+	font-family: "Gotham Pro Regular";
+	font-size: 14px;
+	color: #000000;
+}
+.checkbox__input { /*Скрываем дефолтный чекбокс*/
+    display: none;
+}
+.checkbox__input:checked + .checkbox__label::after { /*Отображение галочки*/
+    transform: scale(1);
+}
+/*Стили текста чекбокса*/
+.checkbox__label {
+	font-family: "Gotham Pro Regular";
+	font-size: 12px;
+	min-width: 573px;
+    line-height: 140%;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+/*Стили самого чекбокса*/
+.checkbox__label::before {
+    content: "";
+    align-self: flex-start;
+    flex: 0 0 15px;
+    height: 15px;
+	background-color: #c4c3bf;
+    margin: 0px 15px 0px 0px;
+}
+.checkbox__label::after { /*Стили галочки*/
+    transition: transform 0.5s ease 0s;
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 2px;
+    left: 2.5px;
+    background-color: #c81d31;
+    transform: scale(0); /*Скрываем галочку*/
+}
+.checkbox a {
+	font-family: "Gotham Pro Regular";
+	font-size: 12px;
+	color: #c81d31;
+	line-height: 0.1px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+/*Кнопка*/
+.send-submit-contant {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 39px;
+    padding-bottom: 92px;
+}
+.send-submit {
+	width: 221px;
+	height: 53px;
+	border-radius: 10px;
+	border: 5px solid #c81d31;
+	background-color: #c81d31;
+	cursor: pointer;
+}
+.send-submit a {
+	font-family: "Gotham Pro";
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+/*7 экран: футер*/
+section#last-page {
+	width: 100%
+	height: 130px;
+	box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.35);
+	border: 1px solid #f7f7f7;
+	background-color: #f7f7f7;
+}
+.last-page__item {
+	display: block;
+	align-items: center;
+}
+.last-page__item .copyright__text {
+	font-family: "Gotham Pro Regular";
+	font-size: 12px;
+	color: #000000;
+	line-height: 0.1px;
+	text-align: center;
+	padding: 60px 0 59px 0;
+}
+
+/*Адаптив*/
+@media screen and (max-width: 320px) {
+	.container {
+	    max-width: 220px;
+	    margin: 0 auto;
+	}
+	/*1 экран: главная страница*/
+	/*Хедер*/
+	.header .nav .nav__item li:first-of-type {
+    	margin-left: 0;
+    	padding: 5px 0 0 47px;
+	}
+	.header .nav .nav__item .first-of-type {
+		padding-left: 47px;
+    	margin-left: 0;
+    }
+	.header {
+		height: 65px;
+	}
+	.header .nav .nav__item { 
+    	display: block;   
+	}
+	.header .nav {
+		height: 65px;
+	}
+	.header .nav .nav__item a {
+	font-family: "Gotham Pro Regular";
+	font-size: 14px;
+	line-height: 22px;
+    color: #000000; 
+    text-decoration: none;
+    padding: 5px 0 5px 0;
+}
+.header .nav .nav__item li {
+	padding-left: 47px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    
+}
+	.header__burger span{
+		position: absolute;
+		background-color: #000;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger {
+		display: inline-block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		top: 22px;
+		z-index: 3;
+	}
+	.header__burger:before,
+	.header__burger:after {
+		content: '';
+		background-color: #000;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:before{
+		top: 0;
+	}
+	.header__burger:after{
+		bottom: 0;
+	}
+	.header__burger.active span{
+		transform: scale(0);
+	}
+
+	.header__burger.active:before{
+		transform:rotate(45deg);
+		top: 9px;
+	}
+	.header__burger.active:after{
+		transform:rotate(-45deg);
+		bottom: 9px;
+	}
+	.nav {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		transition: all 0.3s ease 0s;
+		background-color: #efefef;
+		padding: 70px 10px 0px 10px;
+	}
+	.nav.active{
+		top: 0;
+	}
+
+	.nav__item {
+		display: block;
+	}
+	/*Блок с информацией*/
+	.bg-site-name {
+		width: 100%;
+	    height: 433px;
+	    background: url("../img/bg-modile.png") center no-repeat;    
+	}
+	.bg-site-name__image {
+		padding-top: 95px;
+	}
+	.bg-site-name__image img{
+		width: 100px;
+		height: 100px;
+		padding-top: 0;
+		display: block;
+	}
+	.bg-site-name .title {
+		font-family: "Gotham Pro";
+		font-size: 16px;
+		color: #ffffff;
+		font-weight: bold;
+		line-height: 23.96px;
+		padding-top: 20px;
+		padding-bottom: 5px;
+	}
+	.bg-site-name .subtitle {
+		font-family: "Gotham Pro Regular";
+		font-size: 10px;
+		color: #ffffff;
+		line-height: 23.78px;
+	}
+	.bg-site-name__image-icon {
+		padding-top: 17px;
+		margin: 0;
+	}
+	.bg-site-name__image-icon2 {
+		padding-top: 17px;
+		margin: 0;
+	}
+	.bg-site-name__image-icon img {
+		width: 32px;
+		height: 32px;
+		margin: 0;
+	}
+	.bg-site-name__image-icon2 img {
+		width: 32px;
+		height: 32px;
+		margin-left: -12px;
+	}
+	/*Заголовки разделов*/
+	.head-title {
+		font-family: "Gotham Pro";
+		font-size: 25px;
+		font-weight: bold;
+		color: #000000;
+		line-height: 25.78px;
+		margin-top: 64px;
+		padding-bottom: 22px;
+		text-align: center;
+	}
+	/*2 экран: резюме*/
+	.resume-columns__item {
+		display: block;
+	    
+	}
+	.resume-info-title .resume-contacts-title {
+		display: flex;		
+	}
+	.resume-info-title .resume-info-title .paragraph1 {
+		display: flex;		
+	}
+	.resume-info-title .resume-info-title .paragraph2 {
+		display: flex;		
+	}
+	.resume-info-title .resume-info-title .paragraph3 {
+		display: flex;		
+	}
+	.resume-info-title .resume-info-title .paragraph4 {
+		display: flex;		
+	}
+	/*Контактная информация*/
+	.resume-columns__item .resume-contacts-title {
+		font-family: "Gotham Pro Regular";
+		font-size: 12px;
+		color: #000000;
+		line-height: 35px;
+		text-align: left;
+		padding: 0;
+	}
+	.resume-contacts-title a {
+		font-family: "Gotham Pro";
+	}
+	/*Краткое резюме*/
+	.resume-info-title .paragraph1 {
+		font-family: "Gotham Pro Regular";
+		font-size: 13px;
+		color: #000000;
+		line-height: 35px;
+		text-align: left;
+		padding: 0;
+	}
+	.resume-info-title .paragraph2 {
+		font-family: "Gotham Pro Regular";
+		font-size: 13px;
+		color: #000000;
+		line-height: 35px;
+		text-align: left;
+		padding: 0;
+	}
+	.resume-info-title .paragraph3 {
+		font-family: "Gotham Pro Regular";
+		font-size: 13px;
+		color: #000000;
+		line-height: 35px;
+		text-align: left;
+		padding: 0;
+	}
+	.resume-info-title .paragraph4 {
+		font-family: "Gotham Pro Regular";
+		font-size: 13px;
+		color: #000000;
+		line-height: 35px;
+		text-align: left;
+		padding: 0 0 22px 0;
+	}
+	/*Иконка скачки*/
+		.resume-info-title .paragraph4 img {
+		width: 20px;
+		height: 20px;
+		margin-left: 14px;
+	}
+	/*Кнопка связаться*/
+	.contact-submit {
+		width: 161px;
+		height: 53px;
+		border-radius: 10px;
+		border: 5px solid #c81d31;
+		background-color: #c81d31;
+		cursor: pointer;
+	}
+	.contact-submit a {
+		font-family: "Gotham Pro Regular";
+		font-size: 15px;
+		color: #ffffff;
+		font-weight: bold;
+		text-align: center;
+		cursor: pointer;
+	}
+	/*3 экран: навыки*/
+	.row{
+	    display: block;
+	    justify-content: space-between;
+    	align-items: center;
+    	padding: 0 0 0 15px;
+	}
+	.row2 {
+		display: block;
+	    justify-content: space-between;
+	    padding: 0 0 0 15px;
+	}
+	.grid-item {
+	    background-color: rgba(0, 0, 0, 1);
+	    width: 190px;
+	    height: 189px;
+	    overflow: hidden;
+	    position: relative;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    margin: 0 0 24px 0;
+	}
+	.grid-item img {
+		width: 190px;
+	    height: 189px;
+	}
+	p.grid-title{
+	    position: absolute;
+	    font-family: "Gotham Pro Regular";
+	    font-size: 11px;
+	    color: #fefefe;
+	    line-height: 22px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    text-align: center;
+	    transition: transform .5s, opacity .3s;
+	}
+
+	/*4 экран: образование*/
+	table{
+		width: 100%;
+		border-collapse: collapse;
+	    text-align: center;
+	}
+	td,th{
+	    padding: 3px;
+	    border: 1px solid black;
+	}
+	/*Профессиональные компетенции*/
+	.tablePK1 {
+	    width: 220px;
+	    display: block;
+	    margin-left: 0; 
+	    font-family: "Gotham Pro Regular";
+	    font-size: 10px;
+	}
+	.tablePK2 {
+	    width: 220px;
+	    display: block;
+	    padding-top: 22px;
+	    margin-left: 0; 
+	    font-family: "Gotham Pro Regular";
+	    font-size: 10px;
+	}
+	.tablePK3 {
+		width: 220px;
+	    display: block;
+	    padding-top: 22px;
+	    margin-left: 0; 
+	    font-family: "Gotham Pro Regular";
+	    font-size: 10px;
+	}
+	.tablePK4 {
+		width: 220px;
+	    display: block;
+	    padding-top: 22px;
+	    margin-left: 0; 
+	    font-family: "Gotham Pro Regular";
+	    font-size: 10px;
+	}
+	.tablePK5 {
+		width: 220px;
+	    display: block;
+	    padding-top: 22px;
+	    margin-left: 0;
+	    margin-bottom: 32px;
+	    font-family: "Gotham Pro Regular";
+	    font-size: 10px;
+	}
+	/*Общие компетенции*/
+	.tableOK {
+		width: 100%;
+	    max-width:1170px;
+	    margin-bottom: 32px;
+	    font-family: "Gotham Pro Regular";
+	    font-size: 10px;
+	}
+	/*Учебный план*/
+	.tableUP {
+	    width: 100%;
+	    max-width: 1170px;
+	    font-family: "Gotham Pro Regular";
+	    font-size: 10px;
+	}
+	/*Спойлер*/
+	
+	/*Прямоугольник спойлера*/ 
+	summary {
+	   display:block;
+	   padding: 22px 0 22px 0;
+	   font-size: 12px;
+	   font-family: "Gotham Pro Regular";
+	   line-height: normal;
+	   padding-left: 16px;
+	   cursor: pointer;
+	   position: relative;
+	}
+	/*Иконка стрелочка*/
+	summary:before {  
+	  top: 35px;
+	  right: 16px;
+	  color: transparent;
+	  background: url("../img/icon/open-mobile.png") no-repeat;
+	  width: 15px;
+	  height: 9px;  
+	  content: "";
+	  position: absolute;
+	  transition: transform .5s;
+	}
+	.mobile-hide {
+		display: none;
+	}
+
+	.tableUP {
+		width: 100%;
+		max-width: 220px;
+		font-family: "Gotham Pro Regular";
+	    font-size: 8.5px;
+		margin: 0;
+	}
+	
+	/*5 экран: проекты*/
+	/*Заголовок*/
+	.head-title-projects {
+		font-family: "Gotham Pro";
+		font-size: 25px;
+		font-weight: bold;
+		color: #000000;
+		line-height: 25.78px;
+		margin-top: 64px;
+		padding-bottom: 7px;
+		text-align: center;
+	}
+	/*Подзаголовок*/
+	.head-subtitle {
+		font-family: "Gotham Pro Regular";
+		font-size: 10px;
+		color: #000000;
+		line-height: 15.83px;
+		text-align: center;
+		padding-bottom: 19px;
+	}
+	/*Основной текст*/
+	.paragraph-projects1 {
+		display: none;
+	}
+	.paragraph-projects2 {
+		font-family: "Gotham Pro Regular";
+		font-size: 12px;
+		color: #000000;
+		line-height: 35px;
+		text-align: left;
+		padding-bottom: 0;
+	}
+	/*видео*/
+	.video {
+		margin-left: 0;
+	}
+	video {
+		width: 222px;
+		height: 117px;
+	}
+	/*Текст под видео*/
+	.paragraph-projects3 {
+		font-family: "Gotham Pro Regular";
+		font-size: 12px;
+		color: #000000;
+		line-height: 35px;
+		text-align: left;
+		padding: 37px 0 0 0;
+	}
+	.paragraph-projects3 a {
+		color: #c81d31;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	.paragraph-projects3 img {
+		width: 20px;
+		height: 20px;
+		margin-left: 14px;
+	}
+	/*6 экран: форма обратной связи*/
+	/*Фон*/
+	.background {
+		width: 100%;
+		height: 561px;
+		border: 1px solid #fbfbfb;
+		background-color: #fbfbfb;
+		margin-top: 52px;
+	}
+	/*Заголовок*/
+	.head-title-feedback {
+		font-family: "Gotham Pro";
+		font-size: 25px;
+		font-weight: bold;
+		color: #000000;
+		line-height: 25.78px;
+		padding: 18px 0 6px 0;
+		text-align: center;
+	}
+	/*Подзаголовок*/
+	.head-subtitle-feedback {
+		font-family: "Gotham Pro Regular";
+		font-size: 10px;
+		color: #000000;
+		line-height: 15.83px;
+		text-align: center;
+		padding: 0 0 33px 0;
+	}
+	/*Текст над формами*/
+	.text-FIO {
+		font-family: "Gotham Pro Regular";
+		font-size: 13px;
+		color: #000000;
+		line-height: 0.1px;
+		text-align: left;
+		padding: 0 0 19px 0;
+		margin-left: 25px;
+	}
+	.text-email {
+		font-family: "Gotham Pro Regular";
+		font-size: 13px;
+		color: #000000;
+		line-height: 0.1px;
+		text-align: left;
+		padding: 19px 0 19px 0;
+		margin-left: 25px;
+	}
+	.text-message {
+		font-family: "Gotham Pro Regular";
+		font-size: 13px;
+		color: #000000;
+		line-height: 0.1px;
+		text-align: left;
+		padding: 20px 0 17px 0;
+		margin-left: 25px;
+	}
+
+	.form__item_FIO {
+		width: 220px;
+		height: 41px;
+		box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.35);
+		border: 1px solid #efefef;
+		background-color: #efefef;
+		margin-left: 25px;
+	}
+	.form__item_email {
+		width: 220px;
+		height: 41px;
+		box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.35);
+		border: 1px solid #efefef;
+		background-color: #efefef;
+		margin-left: 25px;
+	}
+	.form__item_message {
+		width: 222px;
+		height: 92px;
+		box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.35);
+		border: 1px solid #efefef;
+		background-color: #efefef;
+		padding-bottom: 11px;
+		margin-left: 25px;
+	}
+	.form__item input {
+		padding-left: 25px;
+		font-family: "Gotham Pro Regular";
+		font-size: 14px;
+		color: #000000;
+	}
+	.form__item textarea {
+		padding-left: 25px;
+		padding-top: 25px;
+		font-family: "Gotham Pro Regular";
+		font-size: 14px;
+		color: #000000;
+	}
+	.checkbox__input { /*Скрываем дефолтный чекбокс*/
+	    display: none;
+	}
+	.checkbox__input:checked + .checkbox__label::after { /*Отображение галочки*/
+	    transform: scale(1);
+	}
+	/*Стили текста чекбокса*/
+	.checkbox__label {
+		font-family: "Gotham Pro Regular";
+		min-width: 191px;
+		font-size: 7px;		
+	    line-height: 9px;
+	    display: inline-flex;
+	    align-items: center;
+	    position: relative;
+	    cursor: pointer;
+	}
+	/*Стили самого чекбокса*/
+	.checkbox__label::before {
+	    content: "";
+	    align-self: flex-start;
+	    flex: 0 0 15px;
+	    height: 15px;
+		background-color: #c4c3bf;
+	    margin: 0px 15px 0px 0px;
+	    margin-left: 25px;
+	}
+	.checkbox__label::after { /*Стили галочки*/
+	    transition: transform 0.5s ease 0s;
+	    content: "";
+	    width: 10px;
+	    height: 10px;
+	    position: absolute;
+	    top: 2px;
+	    left: 2.5px;
+	    background-color: #c81d31;
+	    margin-left: 25px;
+	    transform: scale(0); /*Скрываем галочку*/
+	}
+	.checkbox a {
+		font-family: "Gotham Pro Regular";
+		font-size: 7px;
+		color: #c81d31;
+		line-height: 0.1px;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	/*Кнопка*/
+	.send-submit-contant {
+		display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    padding-top: 22px;
+	    padding-bottom: 52px;
+	}
+	.send-submit {
+		width: 161px;
+		height: 53px;
+		border-radius: 10px;
+		border: 5px solid #c81d31;
+		background-color: #c81d31;
+		cursor: pointer;
+	}
+	.send-submit a {
+		font-family: "Gotham Pro Regular";
+		font-size: 15px;
+		color: #ffffff;
+		font-weight: bold;
+		text-align: center;
+		cursor: pointer;
+	}
+	/*7 экран: футер*/
+	section#last-page {
+		width: 100%;
+		height: 110px;
+	}
+	.last-page__item {
+		display: block;
+		align-items: center;
+	}
+	.last-page__item .copyright__text {
+		font-family: "Gotham Pro Regular";
+		font-size: 10px;
+		color: #000000;
+		line-height: normal;
+		min-width: 220px;
+		text-align: center;
+		padding: 51px  0 50px 0;
+	}
+}
+@media screen and (max-width: 320px) {
+	.header {
+		height: 65px;
+	}
+	.header .nav .nav__item { 
+    	display: block;   
+	}
+	.header .nav {
+		height: 65px;
+	}
+	.header .nav .nav__item a {
+	font-family: "Gotham Pro Regular";
+	font-size: 14px;
+	line-height: 22px;
+    color: #000000; 
+    text-decoration: none;
+    padding: 5px 0 5px 0;
+}
+.header .nav .nav__item li {
+	padding-left: 47px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    
+}
+	.header__burger span{
+		position: absolute;
+		background-color: #000;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger {
+		display: inline-block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		top: 22px;
+		z-index: 3;
+	}
+	.header__burger:before,
+	.header__burger:after {
+		content: '';
+		background-color: #000;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:before{
+		top: 0;
+	}
+	.header__burger:after{
+		bottom: 0;
+	}
+	.header__burger.active span{
+		transform: scale(0);
+	}
+
+	.header__burger.active:before{
+		transform:rotate(45deg);
+		top: 9px;
+	}
+	.header__burger.active:after{
+		transform:rotate(-45deg);
+		bottom: 9px;
+	}
+	.nav {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		transition: all 0.3s ease 0s;
+		background-color: #efefef;
+		padding: 100px 10px 100px 10px;
+	}
+	.nav.active{
+		top: 0;
+	}
+
+	.nav__item {
+		display: block;
+	}
+}
